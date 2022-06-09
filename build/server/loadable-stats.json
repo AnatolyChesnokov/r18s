@@ -1,0 +1,362 @@
+{
+  "name": "server",
+  "hash": "b1c28b2ed6d5af1fb7c3",
+  "publicPath": "/static/",
+  "outputPath": "D:\\Git\\react-easy-ssr-master\\build\\server",
+  "assetsByChunkName": {
+    "server": [
+      "index.js",
+      "server.b02ee5f5cee35042274f.hot-update.js"
+    ],
+    "NoMatch": [
+      "NoMatch.index.js"
+    ],
+    "Home": [
+      "Home.index.js",
+      "Home.b02ee5f5cee35042274f.hot-update.js"
+    ],
+    "Movies": [
+      "Movies.index.js"
+    ],
+    "AboutUs": [
+      "AboutUs.index.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "index.js",
+      "size": 1398251,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false
+      },
+      "chunkNames": [
+        "server"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        "server"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "NoMatch.index.js",
+      "size": 181007,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false
+      },
+      "chunkNames": [
+        "NoMatch"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        "NoMatch"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "Movies.index.js",
+      "size": 48700,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false
+      },
+      "chunkNames": [
+        "Movies"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        "Movies"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "src_components_Grid_tsx.index.js",
+      "size": 17882,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        "src_components_Grid_tsx"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "Home.index.js",
+      "size": 15033,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false
+      },
+      "chunkNames": [
+        "Home"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        "Home"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "AboutUs.index.js",
+      "size": 13465,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false
+      },
+      "chunkNames": [
+        "AboutUs"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        "AboutUs"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "server.b02ee5f5cee35042274f.hot-update.js",
+      "size": 11745,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true,
+        "fullhash": "b02ee5f5cee35042274f"
+      },
+      "chunkNames": [
+        "server"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        "server"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "Home.b02ee5f5cee35042274f.hot-update.js",
+      "size": 9359,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true,
+        "fullhash": "b02ee5f5cee35042274f"
+      },
+      "chunkNames": [
+        "Home"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        "Home"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "server.b02ee5f5cee35042274f.hot-update.json",
+      "size": 37,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true,
+        "fullhash": "b02ee5f5cee35042274f"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": []
+    }
+  ],
+  "namedChunkGroups": {
+    "server": {
+      "name": "server",
+      "chunks": [
+        "server"
+      ],
+      "assets": [
+        {
+          "name": "index.js"
+        },
+        {
+          "name": "server.b02ee5f5cee35042274f.hot-update.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {}
+    },
+    "NoMatch": {
+      "name": "NoMatch",
+      "chunks": [
+        "NoMatch"
+      ],
+      "assets": [
+        {
+          "name": "NoMatch.index.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {}
+    },
+    "Home": {
+      "name": "Home",
+      "chunks": [
+        "src_components_Grid_tsx",
+        "Home"
+      ],
+      "assets": [
+        {
+          "name": "src_components_Grid_tsx.index.js"
+        },
+        {
+          "name": "Home.index.js"
+        },
+        {
+          "name": "Home.b02ee5f5cee35042274f.hot-update.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {}
+    },
+    "Movies": {
+      "name": "Movies",
+      "chunks": [
+        "src_components_Grid_tsx",
+        "Movies"
+      ],
+      "assets": [
+        {
+          "name": "src_components_Grid_tsx.index.js"
+        },
+        {
+          "name": "Movies.index.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {}
+    },
+    "AboutUs": {
+      "name": "AboutUs",
+      "chunks": [
+        "src_components_Grid_tsx",
+        "AboutUs"
+      ],
+      "assets": [
+        {
+          "name": "src_components_Grid_tsx.index.js"
+        },
+        {
+          "name": "AboutUs.index.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "generator": "loadable-components",
+  "chunks": [
+    {
+      "id": "server",
+      "files": [
+        "index.js",
+        "server.b02ee5f5cee35042274f.hot-update.js"
+      ]
+    },
+    {
+      "id": "NoMatch",
+      "files": [
+        "NoMatch.index.js"
+      ]
+    },
+    {
+      "id": "Home",
+      "files": [
+        "Home.index.js",
+        "Home.b02ee5f5cee35042274f.hot-update.js"
+      ]
+    },
+    {
+      "id": "Movies",
+      "files": [
+        "Movies.index.js"
+      ]
+    },
+    {
+      "id": "AboutUs",
+      "files": [
+        "AboutUs.index.js"
+      ]
+    },
+    {
+      "id": "src_components_Grid_tsx",
+      "files": [
+        "src_components_Grid_tsx.index.js"
+      ]
+    }
+  ]
+}

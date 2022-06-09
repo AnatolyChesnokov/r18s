@@ -1,0 +1,728 @@
+{
+  "name": "client",
+  "hash": "fcba2d5c24b4c4e624f8",
+  "publicPath": "/static/",
+  "outputPath": "D:\\Git\\react-easy-ssr-master\\build\\client\\static\\",
+  "assetsByChunkName": {
+    "bundle": [
+      "bundle.css",
+      "bundle.js",
+      "updates/bundle.1d7cb8934c741253e82b.hot-update.js"
+    ],
+    "NoMatch": [
+      "NoMatch.bundle.js"
+    ],
+    "Home": [
+      "Home.bundle.js"
+    ],
+    "Movies": [
+      "Movies.bundle.js"
+    ],
+    "AboutUs": [
+      "AboutUs.bundle.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "bundle.js",
+      "size": 4907138,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "bundle.js.map"
+        }
+      },
+      "chunkNames": [
+        "bundle"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "bundle"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "NoMatch.bundle.js",
+      "size": 177486,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "NoMatch.bundle.js.map"
+        }
+      },
+      "chunkNames": [
+        "NoMatch"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "NoMatch"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "assets/fonts/PlayfairDisplay-Regular.woff",
+      "size": 106652,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "bundle"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "bundle"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "assets/fonts/PlayfairDisplay-Italic.woff",
+      "size": 92380,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "bundle"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "bundle"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "assets/fonts/PlayfairDisplay-Regular.woff2",
+      "size": 75620,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "bundle"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "bundle"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "assets/fonts/PlayfairDisplay-Italic.woff2",
+      "size": 65800,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "bundle"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "bundle"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "Movies.bundle.js",
+      "size": 45308,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "Movies.bundle.js.map"
+        }
+      },
+      "chunkNames": [
+        "Movies"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "Movies"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "src_components_Grid_tsx.bundle.js",
+      "size": 16594,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "src_components_Grid_tsx.bundle.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "src_components_Grid_tsx"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "Home.bundle.js",
+      "size": 13666,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "Home.bundle.js.map"
+        }
+      },
+      "chunkNames": [
+        "Home"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "Home"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "assets/images/icons/apple-icon-180x180.png",
+      "size": 12562,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "bundle"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "bundle"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "AboutUs.bundle.js",
+      "size": 12158,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "AboutUs.bundle.js.map"
+        }
+      },
+      "chunkNames": [
+        "AboutUs"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "AboutUs"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "updates/bundle.1d7cb8934c741253e82b.hot-update.js",
+      "size": 8365,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true,
+        "fullhash": "1d7cb8934c741253e82b",
+        "related": {
+          "sourceMap": "updates/bundle.1d7cb8934c741253e82b.hot-update.js.map"
+        }
+      },
+      "chunkNames": [
+        "bundle"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "bundle"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "assets/images/icons/android-icon-192x192.png",
+      "size": 7090,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "bundle"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "bundle"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "assets/images/icons/apple-icon-152x152.png",
+      "size": 7079,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "bundle"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "bundle"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "assets/images/icons/apple-icon-144x144.png",
+      "size": 6673,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "bundle"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "bundle"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "assets/images/icons/ms-icon-144x144.png",
+      "size": 6673,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "bundle"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "bundle"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "assets/images/icons/apple-icon-120x120.png",
+      "size": 5613,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "bundle"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "bundle"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "assets/images/icons/apple-icon-114x114.png",
+      "size": 5336,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "bundle"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "bundle"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "assets/images/icons/favicon-96x96.png",
+      "size": 4471,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "bundle"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "bundle"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "assets/images/icons/apple-icon-76x76.png",
+      "size": 3677,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "bundle"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "bundle"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "assets/images/icons/apple-icon-72x72.png",
+      "size": 3534,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "bundle"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "bundle"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "assets/images/icons/apple-icon-60x60.png",
+      "size": 3122,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "bundle"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "bundle"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "assets/images/icons/apple-icon-57x57.png",
+      "size": 2937,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "bundle"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "bundle"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "assets/images/icons/favicon-32x32.png",
+      "size": 1970,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "bundle"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "bundle"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "assets/images/icons/favicon-16x16.png",
+      "size": 1129,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [
+        "bundle"
+      ],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": [
+        "bundle"
+      ]
+    },
+    {
+      "type": "asset",
+      "name": "bundle.css",
+      "size": 1054,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {},
+      "chunkNames": [
+        "bundle"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [
+        "bundle"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "updates/1d7cb8934c741253e82b.hot-update.json",
+      "size": 30,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true,
+        "fullhash": "1d7cb8934c741253e82b"
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "chunks": [],
+      "auxiliaryChunks": []
+    }
+  ],
+  "namedChunkGroups": {
+    "bundle": {
+      "name": "bundle",
+      "chunks": [
+        "bundle"
+      ],
+      "assets": [
+        {
+          "name": "bundle.css"
+        },
+        {
+          "name": "bundle.js"
+        },
+        {
+          "name": "updates/bundle.1d7cb8934c741253e82b.hot-update.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 20,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "NoMatch": {
+      "name": "NoMatch",
+      "chunks": [
+        "NoMatch"
+      ],
+      "assets": [
+        {
+          "name": "NoMatch.bundle.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 1,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "Home": {
+      "name": "Home",
+      "chunks": [
+        "src_components_Grid_tsx",
+        "Home"
+      ],
+      "assets": [
+        {
+          "name": "src_components_Grid_tsx.bundle.js"
+        },
+        {
+          "name": "Home.bundle.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 2,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "Movies": {
+      "name": "Movies",
+      "chunks": [
+        "src_components_Grid_tsx",
+        "Movies"
+      ],
+      "assets": [
+        {
+          "name": "src_components_Grid_tsx.bundle.js"
+        },
+        {
+          "name": "Movies.bundle.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 2,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "AboutUs": {
+      "name": "AboutUs",
+      "chunks": [
+        "src_components_Grid_tsx",
+        "AboutUs"
+      ],
+      "assets": [
+        {
+          "name": "src_components_Grid_tsx.bundle.js"
+        },
+        {
+          "name": "AboutUs.bundle.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 2,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "generator": "loadable-components",
+  "chunks": [
+    {
+      "id": "bundle",
+      "files": [
+        "bundle.css",
+        "bundle.js",
+        "updates/bundle.1d7cb8934c741253e82b.hot-update.js"
+      ]
+    },
+    {
+      "id": "NoMatch",
+      "files": [
+        "NoMatch.bundle.js"
+      ]
+    },
+    {
+      "id": "Home",
+      "files": [
+        "Home.bundle.js"
+      ]
+    },
+    {
+      "id": "Movies",
+      "files": [
+        "Movies.bundle.js"
+      ]
+    },
+    {
+      "id": "AboutUs",
+      "files": [
+        "AboutUs.bundle.js"
+      ]
+    },
+    {
+      "id": "src_components_Grid_tsx",
+      "files": [
+        "src_components_Grid_tsx.bundle.js"
+      ]
+    }
+  ]
+}
