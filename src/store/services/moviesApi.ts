@@ -1,6 +1,6 @@
 import callApi from './callApi';
 
-const movies = () => {
+export const movies = () => {
   return callApi(
     `/3/discover/movie?${new URLSearchParams({
       api_key: 'd86a3eb18c343cc36e646ef97315445e',
@@ -13,5 +13,3 @@ const movies = () => {
     }
   );
 };
-
-export default movies;
