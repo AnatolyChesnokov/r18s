@@ -12,9 +12,7 @@ const loadable = (importer) => {
   );
 };
 
-// const Forbidden = loadable(() => import(/* webpackChunkName: "Forbidden" */ './Exception/403'));
 const NoMatch = loadable(() => import(/* webpackChunkName: "NoMatch" */ './Exception/404'));
-// const ServerDown = loadable(() => import(/* webpackChunkName: "ServerDown" */ './Exception/500'));
 
 const Home = loadable(() => import(/* webpackChunkName: "Home" */ './Home/index'));
 const Movies = loadable(() => import(/* webpackChunkName: "Movies" */ './Movies/index'));

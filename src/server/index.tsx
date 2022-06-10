@@ -143,7 +143,6 @@ app.use((req: Request, res: Response) => {
       // If streaming
       console.log('onShellReady start');
       res.statusCode = didError ? 500 : 200;
-      // res.setHeader('Content-type', 'text/html');
       res.write('<!DOCTYPE html>');
       pipe(res);
       console.log('onShellReady stop');

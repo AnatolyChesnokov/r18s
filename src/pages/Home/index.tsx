@@ -1,12 +1,9 @@
 import React, { FC } from 'react';
-// import { useDispatch, useSelector } from 'react-redux';
 import { Helmet } from 'react-helmet-async';
 import { RoutesProps } from 'react-router';
 
 import Grid from '../../components/Grid';
 import homeStyle from '../../assets/jss/pages/homeStyle';
-
-// import { ReduxState } from '../../store/rootReducer';
 
 type Props = {
   children: FC;
@@ -15,11 +12,6 @@ type Props = {
 
 const Home: FC<Props> = ({ children, routeComponent, ...props }) => {
   const classes = homeStyle(props);
-
-  // const dispatch = useDispatch();
-  // const app = useSelector((state: ReduxState) => state.app);
-
-  // const { pathname, search } = routeComponent.location;
 
   const title = 'Home page';
   const description = 'Welcome';

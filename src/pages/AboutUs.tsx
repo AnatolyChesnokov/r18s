@@ -1,12 +1,8 @@
 import React, { FC } from 'react';
-
-// import { useDispatch, useSelector } from 'react-redux';
 import { Helmet } from 'react-helmet-async';
 import { RoutesProps } from 'react-router';
 import Grid from '../components/Grid';
 import aboutUsStyle from '../assets/jss/pages/aboutUsStyle';
-
-// import { ReduxState } from '../store/rootReducer';
 
 type Props = {
   children?: React.ReactNode;
@@ -15,10 +11,6 @@ type Props = {
 
 const AboutUs: FC<Props> = ({ children, routeComponent, ...props }) => {
   const classes = aboutUsStyle(props);
-
-  // const dispatch = useDispatch();
-  // const app = useSelector((state: ReduxState) => state.app);
-  // const { pathname, search } = routeComponent.location;
 
   const title = 'About us';
   const description = 'Details about the app';
