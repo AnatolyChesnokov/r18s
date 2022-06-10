@@ -1,8 +1,8 @@
-import { createUseStyles } from 'react-jss'
-import { Theme } from '../theme'
-import grassBackground from '../../images/free_repeating_background_texture-light_green.jpg'
+import { createUseStyles } from 'react-jss';
+import { Theme } from '../theme';
+import grassBackground from '../../images/free_repeating_background_texture-light_green.jpg';
 
-const drawerWidth = 260
+const drawerWidth = 260;
 
 export default createUseStyles((theme: Theme) => ({
   wrapperBackground: {
@@ -14,15 +14,15 @@ export default createUseStyles((theme: Theme) => ({
     zIndex: 1000,
     opacity: 0,
     backgroundColor: 'transparent',
-    transition: `background-color 350ms ${theme.transition.easing.sharp}, opacity 350ms ${theme.transition.easing.sharp}`
+    transition: `background-color 350ms ${theme.transition.easing.sharp}, opacity 350ms ${theme.transition.easing.sharp}`,
   },
   wrapperBackgroundVisible: {
     opacity: 1,
     visibility: 'visible',
-    backgroundColor: 'rgba(0, 0, 0, 0.2)'
+    backgroundColor: 'rgba(0, 0, 0, 0.2)',
   },
   wrapperBackgroundHidden: {
-    visibility: 'hidden'
+    visibility: 'hidden',
   },
   paper: {
     flex: '1 0 auto',
@@ -46,14 +46,14 @@ export default createUseStyles((theme: Theme) => ({
 
     backgroundImage: `url(${grassBackground})`,
     backgroundRepeat: 'repeat',
-    transition: `transform 300ms ${theme.transition.easing.easeInOut}`
+    transition: `transform 300ms ${theme.transition.easing.easeInOut}`,
   },
   paperVisible: {
     opacity: 1,
     transform: 'translateX(0)',
-    visibility: 'visible'
+    visibility: 'visible',
   },
   paperHidden: {
-    visibility: 'hidden'
-  }
-}))
+    visibility: 'hidden',
+  },
+}));

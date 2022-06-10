@@ -32,7 +32,7 @@ export default function initStore(preloadedState, history) {
   const store: any = createStore(
     createRootReducer(history),
     preloadedState,
-    applyMiddleware(...middlewares, routerMiddleware(history)),
+    applyMiddleware(...middlewares, routerMiddleware(history))
   );
 
   // Hot reloading

@@ -1,6 +1,6 @@
 import React, { FC, useEffect, useRef } from 'react';
-import { Route, /* BrowserRouter,*/ Routes } from 'react-router-dom';
-import { /*useDispatch,*/ useSelector } from 'react-redux';
+import { Route, Routes } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import { ThemeProvider } from 'react-jss';
 import { Helmet } from 'react-helmet-async';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -37,11 +37,7 @@ type AppProps = {
   children?: React.ReactNode;
 };
 
-const AppProvider: FC<AppProps> = (
-  {
-    /*children  ,...props */
-  },
-) => (
+const AppProvider: FC<AppProps> = () => (
   <ThemeProvider theme={defaultTheme}>
     <App />
   </ThemeProvider>
@@ -49,10 +45,7 @@ const AppProvider: FC<AppProps> = (
 
 const App: FC<AppProps> = ({ children, ...props }) => {
   const classes = appStyle(props);
-
-  // const dispatch = useDispatch();
-  // const app = useSelector((state: ReduxState) => state.app);
-  const { pathname /* ,search */ } = useSelector((state: ReduxState) => state.router.location);
+  const { pathname } = useSelector((state: ReduxState) => state.router.location);
 
   const oldPage = useRef(pathname);
   useEffect(() => {
@@ -105,13 +98,7 @@ const App: FC<AppProps> = ({ children, ...props }) => {
         <section className={classes.section}>
           <Routes>
             {routes.map(({ Component, exact, path }, i) => (
-              <Route
-                // exact={typeof exact !== 'undefined' ? exact : false}
-                path={path}
-                key={i}
-                element={<Component routeComponent={Component} />}
-                //render={({ ...routeComponent }) => <Component routeComponent={routeComponent} />}
-              />
+              <Route path={path} key={i} element={<Component routeComponent={Component} />} />
             ))}
           </Routes>
         </section>

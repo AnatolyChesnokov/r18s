@@ -1,5 +1,5 @@
-import { createUseStyles } from 'react-jss'
-import { Theme } from '../theme'
+import { createUseStyles } from 'react-jss';
+import { Theme } from '../theme';
 
 export default createUseStyles((theme: Theme) => ({
   container: { ...theme.layout.container },
@@ -11,25 +11,25 @@ export default createUseStyles((theme: Theme) => ({
       ...theme.typography.body1,
       margin: '0 0 20px 0',
       '&:first-of-type': {
-        margin: '20px 0 20px 0'
+        margin: '20px 0 20px 0',
       },
       '&:last-of-type': {
-        margin: '20px 0 0 0'
-      }
+        margin: '20px 0 0 0',
+      },
     },
     '& a': {
       textDecoration: 'none',
       color: 'black',
       '@media(hover: hover) and (pointer: fine)': {
         '&:hover': {
-          textDecoration: 'underline'
-        }
+          textDecoration: 'underline',
+        },
       },
       '@media (hover: none)': {
         '&:active': {
-          textDecoration: 'underline'
-        }
-      }
-    }
-  }
-}))
+          textDecoration: 'underline',
+        },
+      },
+    },
+  },
+}));

@@ -1,6 +1,6 @@
-import { createUseStyles } from 'react-jss'
-import { Theme } from '../theme'
-import grassBackground from '../../images/free_repeating_background_texture-light_green.jpg'
+import { createUseStyles } from 'react-jss';
+import { Theme } from '../theme';
+import grassBackground from '../../images/free_repeating_background_texture-light_green.jpg';
 
 export default createUseStyles((theme: Theme) => ({
   appBar: {
@@ -20,7 +20,7 @@ export default createUseStyles((theme: Theme) => ({
         flexDirection: 'column',
         padding: '5px 0',
         justifyContent: 'flex-start',
-        alignItems: 'flex-start'
+        alignItems: 'flex-start',
       },
 
       '& > $navLink': {
@@ -41,23 +41,23 @@ export default createUseStyles((theme: Theme) => ({
           width: '100%',
           textDecoration: 'none',
           padding: '6px 14px',
-          textAlign: 'left'
+          textAlign: 'left',
         },
         '@media(hover: hover) and (pointer: fine)': {
           '&:hover': {
-            textDecoration: 'underline'
-          }
+            textDecoration: 'underline',
+          },
         },
         '@media (hover: none)': {
           '&:active': {
-            textDecoration: 'underline'
-          }
-        }
+            textDecoration: 'underline',
+          },
+        },
       },
       '& > $closeMenuMobile': {
         // Closing button for mobile
         [theme.breakpoints.up('md')]: {
-          display: 'none'
+          display: 'none',
         },
         display: 'flex',
         justifyContent: 'flex-end',
@@ -70,30 +70,30 @@ export default createUseStyles((theme: Theme) => ({
           border: 0,
           padding: `9px ${theme.spacing(3)}px`,
           [theme.breakpoints.down('sm')]: {
-            paddingRight: theme.spacing(1)
+            paddingRight: theme.spacing(1),
           },
           textDecoration: 'none',
           backgroundColor: 'transparent',
           '& img': {
             padding: 0,
             marginRight: theme.spacing(1),
-            height: '28px'
+            height: '28px',
           },
           '&:focus': {
-            outline: 0
+            outline: 0,
           },
           '@media(hover: hover) and (pointer: fine)': {
             '&:hover': {
-              backgroundColor: 'rgba(200, 200, 200, 0.25)'
-            }
+              backgroundColor: 'rgba(200, 200, 200, 0.25)',
+            },
           },
           '@media (hover: none)': {
             '&:active': {
-              backgroundColor: 'rgba(200, 200, 200, 0.25)'
-            }
-          }
-        }
-      }
+              backgroundColor: 'rgba(200, 200, 200, 0.25)',
+            },
+          },
+        },
+      },
     },
     '& $toolBar': {
       position: 'relative',
@@ -107,25 +107,25 @@ export default createUseStyles((theme: Theme) => ({
         margin: '0 5px 0 0',
 
         '&:focus': {
-          outline: 0
+          outline: 0,
         },
         '@media(hover: hover) and (pointer: fine)': {
           '&:hover': {
             '& div': {
               '& span': {
-                textDecoration: 'underline'
-              }
-            }
-          }
+                textDecoration: 'underline',
+              },
+            },
+          },
         },
         '@media (hover: none)': {
           '&:active': {
             '& div': {
               '& span': {
-                textDecoration: 'underline'
-              }
-            }
-          }
+                textDecoration: 'underline',
+              },
+            },
+          },
         },
         '& div': {
           display: 'flex',
@@ -133,7 +133,7 @@ export default createUseStyles((theme: Theme) => ({
           fontSize: 40,
           color: theme.palette.common.black,
           [theme.breakpoints.down('md')]: {
-            fontSize: 30
+            fontSize: 30,
           },
           '& span': {
             margin: '0 0 0 1rem',
@@ -142,10 +142,10 @@ export default createUseStyles((theme: Theme) => ({
             [theme.breakpoints.down('md')]: {
               margin: '0 0 0 0.5rem',
               lineHeight: '1.3rem',
-              letterSpacing: '-1.7px'
-            }
-          }
-        }
+              letterSpacing: '-1.7px',
+            },
+          },
+        },
       },
       '& button': {
         cursor: 'pointer',
@@ -157,34 +157,34 @@ export default createUseStyles((theme: Theme) => ({
         textDecoration: 'none',
         backgroundColor: 'transparent',
         '&:focus': {
-          outline: 0
+          outline: 0,
         },
         '@media(hover: hover) and (pointer: fine)': {
           '&:hover': {
-            backgroundColor: 'rgba(200, 200, 200, 0.25)'
-          }
+            backgroundColor: 'rgba(200, 200, 200, 0.25)',
+          },
         },
         '@media (hover: none)': {
           '&:active': {
-            backgroundColor: 'rgba(200, 200, 200, 0.25)'
-          }
-        }
-      }
-    }
+            backgroundColor: 'rgba(200, 200, 200, 0.25)',
+          },
+        },
+      },
+    },
   },
   hiddenSmDown: {
     [theme.breakpoints.down('md')]: {
-      display: 'none'
-    }
+      display: 'none',
+    },
   },
   hiddenMdUp: {
     [theme.breakpoints.up('md')]: {
-      display: 'none'
-    }
+      display: 'none',
+    },
   },
   toolBar: {},
   logoLink: {},
   menuItems: {},
   closeMenuMobile: {},
-  navLink: {}
-}))
+  navLink: {},
+}));

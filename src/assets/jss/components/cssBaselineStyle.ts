@@ -1,5 +1,5 @@
-import { createUseStyles } from 'react-jss'
-import { Theme } from '../theme'
+import { createUseStyles } from 'react-jss';
+import { Theme } from '../theme';
 
 // https://github.com/cssinjs/normalize-jss/blob/master/index.js
 // https://material-ui.com/components/css-baseline/
@@ -12,10 +12,10 @@ export default createUseStyles((theme: Theme) => ({
       // is not affected by `padding` or `border`.
       boxSizing: 'border-box',
       textSizeAdjust: '100%', // Prevent adjustments of font size after orientation changes in IE and iOS.
-      WebkitTapHighlightColor: 'transparent' // https://stackoverflow.com/a/42508425/10294022
+      WebkitTapHighlightColor: 'transparent', // https://stackoverflow.com/a/42508425/10294022
     },
     '*, *::before, *::after': {
-      boxSizing: 'inherit'
+      boxSizing: 'inherit',
     },
 
     /**
@@ -28,21 +28,21 @@ export default createUseStyles((theme: Theme) => ({
       backgroundColor: theme.palette.background.default,
       '@media print': {
         // Save printer ink.
-        backgroundColor: theme.palette.common.white
+        backgroundColor: theme.palette.common.white,
       },
       // Add support for document.body.requestFullScreen().
       // Other elements, if background transparent, are not supported.
       '&::backdrop': {
-        backgroundColor: theme.palette.background.default
+        backgroundColor: theme.palette.background.default,
       },
-      overflow: 'hidden auto'
+      overflow: 'hidden auto',
     },
 
     /**
      * Add the correct display in IE9
      */
     'article, aside, footer, header, nav, section, figcaption, figure, main': {
-      display: 'block'
+      display: 'block',
     },
 
     /**
@@ -51,7 +51,7 @@ export default createUseStyles((theme: Theme) => ({
      */
     h1: {
       fontSize: '2em',
-      margin: '0.67em 0'
+      margin: '0.67em 0',
     },
 
     /**
@@ -61,7 +61,7 @@ export default createUseStyles((theme: Theme) => ({
     hr: {
       boxSizing: 'content-box' /* 1 */,
       height: 0 /* 1 */,
-      overflow: 'visible' /* 2 */
+      overflow: 'visible' /* 2 */,
     },
 
     /**
@@ -70,7 +70,7 @@ export default createUseStyles((theme: Theme) => ({
      */
     pre: {
       fontFamily: 'monospace, monospace' /* 1 */,
-      fontSize: '1em' /* 2 */
+      fontSize: '1em' /* 2 */,
     },
 
     /**
@@ -81,10 +81,10 @@ export default createUseStyles((theme: Theme) => ({
      */
     a: {
       background: 'transparent' /* 1 */,
-      textDecorationSkip: 'objects' /* 2 */
+      textDecorationSkip: 'objects' /* 2 */,
     },
     'a:active, a:hover': {
-      outlineWidth: 0 /* 3 */
+      outlineWidth: 0 /* 3 */,
     },
 
     /**
@@ -93,14 +93,14 @@ export default createUseStyles((theme: Theme) => ({
      */
     'abbr[title]': {
       borderBottom: 'none' /* 1 */,
-      textDecoration: 'underline' /* 2 */
+      textDecoration: 'underline' /* 2 */,
     },
 
     /**
      * Add the correct font weight in Chrome, Edge, and Safari.
      */
     'b, strong': {
-      fontWeight: 'bolder'
+      fontWeight: 'bolder',
     },
 
     /**
@@ -109,14 +109,14 @@ export default createUseStyles((theme: Theme) => ({
      */
     'code, kbp, samp': {
       fontFamily: 'monospace, monospace' /* 1 */,
-      fontSize: '1em' /* 2 */
+      fontSize: '1em' /* 2 */,
     },
 
     /**
      * Add the correct font style in Android 4.3-.
      */
     dfn: {
-      fontStyle: 'italic'
+      fontStyle: 'italic',
     },
 
     /**
@@ -124,14 +124,14 @@ export default createUseStyles((theme: Theme) => ({
      */
     mark: {
       backgroundColor: '#ff0',
-      color: '#000'
+      color: '#000',
     },
 
     /**
      * Add the correct font size in all browsers.
      */
     small: {
-      fontSize: '80%'
+      fontSize: '80%',
     },
 
     /**
@@ -142,20 +142,20 @@ export default createUseStyles((theme: Theme) => ({
       fontSize: '75%',
       lineHeight: 0,
       position: 'relative',
-      verticalAlign: 'baseline'
+      verticalAlign: 'baseline',
     },
     sup: {
-      top: '-0.5em'
+      top: '-0.5em',
     },
     sub: {
-      bottom: '-0.25em'
+      bottom: '-0.25em',
     },
 
     /**
      * Add the correct display in IE 9-.
      */
     'audio, video': {
-      display: 'inline-block'
+      display: 'inline-block',
     },
 
     /**
@@ -163,7 +163,7 @@ export default createUseStyles((theme: Theme) => ({
      */
     'audio:not([controls])': {
       display: 'none',
-      height: 0
+      height: 0,
     },
 
     /**
@@ -172,14 +172,14 @@ export default createUseStyles((theme: Theme) => ({
      */
     img: {
       borderStyle: 'none' /* 1 */,
-      verticalAlign: 'middle' /* 2 */
+      verticalAlign: 'middle' /* 2 */,
     },
 
     /**
      * Hide the overflow in IE.
      */
     'svg:not(:root)': {
-      overflow: 'hidden'
+      overflow: 'hidden',
     },
 
     /**
@@ -190,43 +190,44 @@ export default createUseStyles((theme: Theme) => ({
       fontFamily: 'sans-serif' /* 1 */,
       fontSize: '100%' /* 1 */,
       lineHeight: '1.15' /* 1 */,
-      margin: 0 /* 2 */
+      margin: 0 /* 2 */,
     },
 
     /**
      * Show the overflow in IE & Edge.
      */
     'button, input': {
-      overflow: 'visible'
+      overflow: 'visible',
     },
 
     /**
      * Remove the inheritance of text transform in Edge, Firefox, and IE.
      */
     'button, select': {
-      textTransform: 'none'
+      textTransform: 'none',
     },
 
     /**
      * Correct the inability to style clickable types in iOS and Safari.
      */
     'button, [type=reset], [type=submit]': {
-      '-webkit-appearance': 'button'
+      '-webkit-appearance': 'button',
     },
 
     /**
      * Remove the inner border and padding in Firefox.
      */
-    'button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner': {
-      borderStyle: 'none',
-      padding: 0
-    },
+    'button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner':
+      {
+        borderStyle: 'none',
+        padding: 0,
+      },
 
     /**
      * Restore the focus styles unset by the previous rule.
      */
     'button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring': {
-      outline: '1px dotted ButtonText'
+      outline: '1px dotted ButtonText',
     },
 
     /**
@@ -235,7 +236,7 @@ export default createUseStyles((theme: Theme) => ({
     fieldset: {
       border: '1px solid #c0c0c0',
       margin: '0 2px',
-      padding: '0.35em 0.625em 0.75em'
+      padding: '0.35em 0.625em 0.75em',
     },
 
     /**
@@ -250,7 +251,7 @@ export default createUseStyles((theme: Theme) => ({
       display: 'table' /* 1 */,
       maxWidth: '100%' /* 1 */,
       padding: 0 /* 3 */,
-      whiteSpace: 'normal' /* 1 */
+      whiteSpace: 'normal' /* 1 */,
     },
 
     /**
@@ -259,14 +260,14 @@ export default createUseStyles((theme: Theme) => ({
      */
     progress: {
       display: 'inline-block' /* 1 */,
-      verticalAlign: 'baseline' /* 2 */
+      verticalAlign: 'baseline' /* 2 */,
     },
 
     /**
      * Remove the default vertical scrollbar in IE.
      */
     textarea: {
-      overflow: 'auto'
+      overflow: 'auto',
     },
 
     /**
@@ -275,14 +276,14 @@ export default createUseStyles((theme: Theme) => ({
      */
     '[type=checkbox], [type=radio]': {
       boxSizing: 'border-box' /* 1 */,
-      padding: 0 /* 2 */
+      padding: 0 /* 2 */,
     },
 
     /**
      * Correct the cursor style of increment and decrement buttons in Chrome.
      */
     '[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button': {
-      height: 'auto'
+      height: 'auto',
     },
 
     /**
@@ -291,14 +292,14 @@ export default createUseStyles((theme: Theme) => ({
      */
     '[type=search]': {
       appearance: 'textfield' /* 1 */,
-      outlineOffset: '-2px' /* 2 */
+      outlineOffset: '-2px' /* 2 */,
     },
 
     /**
      * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
      */
     '[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration': {
-      appearance: 'none'
+      appearance: 'none',
     },
 
     /**
@@ -307,42 +308,42 @@ export default createUseStyles((theme: Theme) => ({
      */
     '::-webkit-file-upload-button': {
       appearance: 'button' /* 1 */,
-      font: 'inherit' /* 2 */
+      font: 'inherit' /* 2 */,
     },
 
     /*
      * Add the correct display in Edge, IE, and Firefox.
      */
     'details, menu': {
-      display: 'block'
+      display: 'block',
     },
 
     /*
      * Add the correct display in all browsers.
      */
     summary: {
-      display: 'list-item'
+      display: 'list-item',
     },
 
     /**
      * Add the correct display in IE 9-.
      */
     canvas: {
-      display: 'inline-block'
+      display: 'inline-block',
     },
 
     /**
      * Add the correct display in IE.
      */
     template: {
-      display: 'none'
+      display: 'none',
     },
 
     /**
      * Add the correct display in IE 10-.
      */
     '[hidden]': {
-      display: 'none'
-    }
-  }
-}))
+      display: 'none',
+    },
+  },
+}));

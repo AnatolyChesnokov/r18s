@@ -61,8 +61,7 @@ const Header: FC<Props> = ({ children, ...props }) => {
           }}
           onClick={() => {
             setMobileOpen(false);
-          }}
-        >
+          }}>
           <img src={CloseImageUrl} alt='Close' />
         </button>
       </div>

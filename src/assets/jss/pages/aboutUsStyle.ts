@@ -1,5 +1,5 @@
-import { createUseStyles } from 'react-jss'
-import { Theme } from '../theme'
+import { createUseStyles } from 'react-jss';
+import { Theme } from '../theme';
 
 export default createUseStyles((theme: Theme) => ({
   container: { ...theme.layout.container },
@@ -11,11 +11,11 @@ export default createUseStyles((theme: Theme) => ({
       ...theme.typography.body1,
       margin: '0 0 20px 0',
       '&:first-of-type': {
-        margin: '20px 0 20px 0'
+        margin: '20px 0 20px 0',
       },
       '&:last-of-type': {
-        margin: '20px 0 0 0'
-      }
-    }
-  }
-}))
+        margin: '20px 0 0 0',
+      },
+    },
+  },
+}));

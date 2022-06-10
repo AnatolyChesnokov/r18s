@@ -1,10 +1,10 @@
 export interface Transition {
   easing: {
-    easeInOut: string
-    easeOut: string
-    easeIn: string
-    sharp: string
-  }
+    easeInOut: string;
+    easeOut: string;
+    easeIn: string;
+    sharp: string;
+  };
 }
 
 export default {
@@ -17,6 +17,6 @@ export default {
     // Objects leave the screen at full velocity. They do not decelerate when off-screen.
     easeIn: 'cubic-bezier(0.4, 0, 1, 1)',
     // The sharp curve is used by objects that may return to the screen at any time.
-    sharp: 'cubic-bezier(0.4, 0, 0.6, 1)'
-  }
-}
+    sharp: 'cubic-bezier(0.4, 0, 0.6, 1)',
+  },
+};

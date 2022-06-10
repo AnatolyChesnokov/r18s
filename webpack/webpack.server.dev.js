@@ -11,6 +11,7 @@ module.exports = {
   target: 'node',
   devServer: {
     hot: true,
+    client: { overlay: false },
   },
   entry: {
     server: [require.resolve('core-js/stable'), require.resolve('regenerator-runtime/runtime'), paths.srcServer],

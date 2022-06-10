@@ -1,5 +1,5 @@
-import { createUseStyles } from 'react-jss'
-import { Theme } from '../theme'
+import { createUseStyles } from 'react-jss';
+import { Theme } from '../theme';
 
 export default createUseStyles((theme: Theme) => ({
   container: { ...theme.layout.container },
@@ -14,8 +14,8 @@ export default createUseStyles((theme: Theme) => ({
     '& $exceptionImage': {
       maxWidth: '100%',
       height: 'auto',
-      margin: '20px 0 20px 0'
-    }
+      margin: '20px 0 20px 0',
+    },
   },
   title: {},
   subtitle: {},
@@ -23,12 +23,12 @@ export default createUseStyles((theme: Theme) => ({
   exceptionImage: {},
   fontSpinner: {
     fontSize: 50,
-    color: theme.palette.common.black
+    color: theme.palette.common.black,
   },
   spinner: {
-    animation: '$spin 2s linear infinite'
+    animation: '$spin 2s linear infinite',
   },
   '@keyframes spin': {
-    '100%': { transform: 'rotate(360deg)' }
-  }
-}))
+    '100%': { transform: 'rotate(360deg)' },
+  },
+}));

@@ -1,5 +1,5 @@
-import { createUseStyles } from 'react-jss'
-import { Theme } from '../theme'
+import { createUseStyles } from 'react-jss';
+import { Theme } from '../theme';
 
 export default createUseStyles((theme: Theme) => ({
   container: { ...theme.layout.container },
@@ -13,28 +13,28 @@ export default createUseStyles((theme: Theme) => ({
       listStyleType: 'none',
       display: 'flex',
       [theme.breakpoints.down('md')]: {
-        flexDirection: 'column'
+        flexDirection: 'column',
       },
       margin: '0 0 20px 0',
       backgroundColor: '#fffeee',
       '&:last-of-type': {
-        margin: '0 0 0 0'
+        margin: '0 0 0 0',
       },
       '& $movieJacket': {
         display: 'flex',
         justifyContent: 'center',
         '& img': {
           width: 200,
-          height: 300
-        }
+          height: 300,
+        },
       },
       '& $movieDetails': {
         '& h2': { ...theme.typography.h4, margin: 0, letterSpacing: -1, lineHeight: '2.5rem' },
         '& p': { ...theme.typography.subtitle2, margin: '1rem 0 0 0', lineHeight: '1.3rem' },
-        padding: '20px 30px'
-      }
-    }
+        padding: '20px 30px',
+      },
+    },
   },
   movieJacket: {},
-  movieDetails: {}
-}))
+  movieDetails: {},
+}));

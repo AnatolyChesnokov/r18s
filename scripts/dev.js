@@ -37,7 +37,7 @@ const start = async () => {
         publicPath: clientConfig.output.publicPath,
         stats: clientConfig.stats,
         writeToDisk: true,
-      }),
+      })
     );
 
     app.use(
@@ -45,7 +45,7 @@ const start = async () => {
         log: false,
         path: '/__webpack_hmr',
         heartbeat: 2000,
-      }),
+      })
     );
 
     serverCompiler.watch(
@@ -54,7 +54,7 @@ const start = async () => {
         poll: 1000, // Check for changes every second
         aggregateTimeout: 200,
       },
-      (err, stats) => compilation(err, stats, serverConfig.stats),
+      (err, stats) => compilation(err, stats, serverConfig.stats)
     );
 
     await Promise.all([compilerListener('client', clientCompiler), compilerListener('server', serverCompiler)]);

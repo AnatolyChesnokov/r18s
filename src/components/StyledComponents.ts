@@ -1,4 +1,4 @@
-import styled, { keyframes, css } from 'styled-components'
+import styled, { keyframes, css } from 'styled-components';
 
 export const TestComponentForNothing: any = styled.ul`
   ${(props: any) =>
@@ -6,4 +6,4 @@ export const TestComponentForNothing: any = styled.ul`
       display: flex;
       background-color: ${props.position};
     `}
-`
+`;

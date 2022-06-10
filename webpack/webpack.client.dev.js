@@ -12,6 +12,7 @@ module.exports = {
   devtool: 'source-map',
   devServer: {
     hot: true,
+    client: { overlay: false },
   },
   entry: {
     bundle: [require.resolve('core-js/stable'), require.resolve('regenerator-runtime/runtime'), paths.srcClient],

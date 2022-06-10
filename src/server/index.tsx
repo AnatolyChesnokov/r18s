@@ -104,7 +104,7 @@ app.use((req: Request, res: Response) => {
       const html = ReactDOMServer.renderToString(
         <JssProvider jss={jss} registry={sheets} generateId={generateId} classNamePrefix='app-'>
           {sheet.collectStyles(extractor.collectChunks(jsx(staticContext, helmetContext)))}
-        </JssProvider>,
+        </JssProvider>
       );
 
       let css = sheets.toString();
@@ -162,6 +162,6 @@ app.listen(PORT, (err) => {
   if (err) console.log(err);
   else
     console.log(
-      `App SSR running ${process.env.NODE_ENV === 'production' ? `port : ${PORT}` : `http://localhost:${PORT}`} 🌎`,
+      `App SSR running ${process.env.NODE_ENV === 'production' ? `port : ${PORT}` : `http://localhost:${PORT}`} 🌎`
     );
 });

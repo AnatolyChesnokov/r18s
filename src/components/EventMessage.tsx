@@ -47,8 +47,7 @@ const EventMessage: FC<Props> = ({ message, event, refresh, onClose, children, .
         [classes.containerBlock]: !onClose,
         [classes.containerNotification]: onClose,
         [classes.containerNotificationOpen]: isNotificationOpened,
-      })}
-    >
+      })}>
       <div className={classNames(classes.message, classes[event])}>
         {onClose && (
           <button
@@ -59,8 +58,7 @@ const EventMessage: FC<Props> = ({ message, event, refresh, onClose, children, .
               if (e.key === 'Escape') {
                 onClose();
               }
-            }}
-          >
+            }}>
             <img src={CloseImageUrl} alt='Close' />
           </button>
         )}
@@ -75,8 +73,7 @@ const EventMessage: FC<Props> = ({ message, event, refresh, onClose, children, .
               onClick={() => {
                 window.location.reload();
               }}
-              model='event'
-            >
+              model='event'>
               Try to refresh the page
             </Button>
           )}

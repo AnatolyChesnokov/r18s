@@ -1,30 +1,30 @@
-const path = require('path')
-const { paths } = require('../scripts/utils')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const path = require('path');
+const { paths } = require('../scripts/utils');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   rules: [
     {
       test: /\.(js|jsx|ts|tsx)$/,
       exclude: /node_modules/,
-      loader: 'babel-loader'
+      loader: 'babel-loader',
     },
     {
       test: /\.css$/,
       use: [
         {
-          loader: MiniCssExtractPlugin.loader
+          loader: MiniCssExtractPlugin.loader,
         },
         {
-          loader: 'css-loader'
+          loader: 'css-loader',
         },
         {
           loader: 'postcss-loader',
           options: {
-            plugins: [require('autoprefixer')]
-          }
-        }
-      ]
+            plugins: [require('autoprefixer')],
+          },
+        },
+      ],
     },
     {
       test: /\.(png|jpe?g|gif|ico)$/,
@@ -35,10 +35,10 @@ module.exports = {
           options: {
             limit: 150000,
             outputPath: 'assets/images',
-            name: '[name].[ext]'
-          }
-        }
-      ]
+            name: '[name].[ext]',
+          },
+        },
+      ],
     },
     {
       test: /\.(png|jpe?g|gif|ico)$/,
@@ -48,10 +48,10 @@ module.exports = {
           loader: 'file-loader',
           options: {
             outputPath: 'assets/images/icons',
-            name: '[name].[ext]'
-          }
-        }
-      ]
+            name: '[name].[ext]',
+          },
+        },
+      ],
     },
     {
       test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
@@ -61,10 +61,10 @@ module.exports = {
           options: {
             outputPath: 'assets/fonts',
             mimetype: 'application/font-woff',
-            name: '[name].[ext]'
-          }
-        }
-      ]
+            name: '[name].[ext]',
+          },
+        },
+      ],
     },
     {
       test: /\.svg$/,
@@ -75,10 +75,10 @@ module.exports = {
           options: {
             limit: 150000,
             outputPath: 'assets/images',
-            name: '[name].[ext]'
-          }
-        }
-      ]
-    }
-  ]
-}
+            name: '[name].[ext]',
+          },
+        },
+      ],
+    },
+  ],
+};

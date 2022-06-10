@@ -1,5 +1,5 @@
-import { createUseStyles } from 'react-jss'
-import { Theme } from '../theme'
+import { createUseStyles } from 'react-jss';
+import { Theme } from '../theme';
 
 export default createUseStyles((theme: Theme) => ({
   button: {
@@ -19,26 +19,26 @@ export default createUseStyles((theme: Theme) => ({
     padding: '0.5em 1em',
     textShadow: '0px 1px 0px #283966',
     '&:focus': {
-      outline: 0
+      outline: 0,
     },
     '@media(hover: hover) and (pointer: fine)': {
       '&:hover': {
         background: 'linear-gradient(to bottom, #476e9e 5%, #7892c2 100%)',
-        backgroundColor: '#476e9e'
+        backgroundColor: '#476e9e',
       },
       '&:active': {
         position: 'relative',
-        top: 1
-      }
+        top: 1,
+      },
     },
     '@media (hover: none)': {
       '&:active': {
         position: 'relative',
         top: 1,
         background: 'linear-gradient(to bottom, #476e9e 5%, #7892c2 100%)',
-        backgroundColor: '#476e9e'
-      }
-    }
+        backgroundColor: '#476e9e',
+      },
+    },
   },
   eventModel: {
     boxShadow: 'none',
@@ -51,20 +51,20 @@ export default createUseStyles((theme: Theme) => ({
     '@media(hover: hover) and (pointer: fine)': {
       '&:hover': {
         background: 'none',
-        backgroundColor: '#eee'
+        backgroundColor: '#eee',
       },
       '&:active': {
         position: 'relative',
-        top: 1
-      }
+        top: 1,
+      },
     },
     '@media (hover: none)': {
       '&:active': {
         position: 'relative',
         top: 1,
         background: 'none',
-        backgroundColor: '#eee'
-      }
-    }
-  }
-}))
+        backgroundColor: '#eee',
+      },
+    },
+  },
+}));

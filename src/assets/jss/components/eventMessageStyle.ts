@@ -1,5 +1,5 @@
-import { createUseStyles } from 'react-jss'
-import { Theme } from '../theme'
+import { createUseStyles } from 'react-jss';
+import { Theme } from '../theme';
 
 export default createUseStyles((theme: Theme) => ({
   containerBlock: {
@@ -7,7 +7,7 @@ export default createUseStyles((theme: Theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    margin: '2rem'
+    margin: '2rem',
   },
   containerNotification: {
     position: 'fixed',
@@ -15,15 +15,15 @@ export default createUseStyles((theme: Theme) => ({
     bottom: -400,
     right: '2rem',
     [theme.breakpoints.down('sm')]: {
-      right: '1rem'
+      right: '1rem',
     },
-    transition: `all 350ms ${theme.transition.easing.easeInOut}`
+    transition: `all 350ms ${theme.transition.easing.easeInOut}`,
   },
   containerNotificationOpen: {
     bottom: '2rem',
     [theme.breakpoints.down('sm')]: {
-      bottom: '1rem'
-    }
+      bottom: '1rem',
+    },
   },
 
   message: {
@@ -33,16 +33,16 @@ export default createUseStyles((theme: Theme) => ({
     minWidth: 250,
     maxWidth: 400,
     [theme.breakpoints.down('sm')]: {
-      width: 270
+      width: 270,
     },
     padding: '1rem 1.5rem',
     position: 'relative',
     '& span': {
       fontSize: 40,
-      marginRight: '1.5rem'
+      marginRight: '1.5rem',
     },
     '& > div': {
-      '& > p': { ...theme.typography.body1 }
+      '& > p': { ...theme.typography.body1 },
     },
     '& $closingButton': {
       borderRadius: '3px',
@@ -55,28 +55,28 @@ export default createUseStyles((theme: Theme) => ({
       backgroundColor: 'transparent',
       '& img': {
         padding: 0,
-        height: '18px'
+        height: '18px',
       },
       '&:focus': {
-        outline: 0
+        outline: 0,
       },
       '@media(hover: hover) and (pointer: fine)': {
         '&:hover': {
-          backgroundColor: 'rgba(200, 200, 200, 0.25)'
-        }
+          backgroundColor: 'rgba(200, 200, 200, 0.25)',
+        },
       },
       '@media (hover: none)': {
         '&:active': {
-          backgroundColor: 'rgba(200, 200, 200, 0.25)'
-        }
-      }
-    }
+          backgroundColor: 'rgba(200, 200, 200, 0.25)',
+        },
+      },
+    },
   },
   closingButton: {},
   error: {
-    backgroundColor: theme.palette.error
+    backgroundColor: theme.palette.error,
   },
   success: {
-    backgroundColor: theme.palette.success
-  }
-}))
+    backgroundColor: theme.palette.success,
+  },
+}));

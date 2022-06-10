@@ -1,14 +1,14 @@
-import React, { FC, ReactChild } from 'react'
+import React, { FC, ReactChild } from 'react';
 
-import cssBaseline from '../assets/jss/components/cssBaselineStyle'
+import cssBaseline from '../assets/jss/components/cssBaselineStyle';
 
 interface Props {
-  children?: ReactChild
+  children?: ReactChild;
 }
 
 const CssBaseline: FC<Props> = ({ children, ...props }) => {
-  cssBaseline(props)
-  return <>{children}</>
-}
+  cssBaseline(props);
+  return <>{children}</>;
+};
 
-export default CssBaseline
+export default CssBaseline;

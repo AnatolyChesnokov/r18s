@@ -3,26 +3,26 @@ module.exports = {
   parser: '@typescript-eslint/parser', // Specifies the ESLint parser
   parserOptions: {
     ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
-    sourceType: 'module' // Allows for the use of imports
+    sourceType: 'module', // Allows for the use of imports
   },
   plugins: ['@typescript-eslint', 'prettier'],
   extends: [
     'airbnb',
     'airbnb/hooks',
     'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    'plugin:prettier/recommended'
+    // 'prettier/@typescript-eslint',
+    'plugin:prettier/recommended',
   ],
   settings: {
     'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
     'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx']
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx']
-      }
-    }
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
   },
   rules: {
     'no-case-declarations': 'off',
@@ -43,7 +43,7 @@ module.exports = {
     'react/jsx-props-no-spreading': 'warn',
     'react/jsx-wrap-multilines': 0,
     'react/no-did-update-set-state': 'off',
-    'react/require-default-props': 'off'
+    'react/require-default-props': 'off',
   },
   globals: {
     window: true,
@@ -52,6 +52,6 @@ module.exports = {
     FormData: true,
     FileReader: true,
     Blob: true,
-    navigator: true
-  }
-}
+    navigator: true,
+  },
+};

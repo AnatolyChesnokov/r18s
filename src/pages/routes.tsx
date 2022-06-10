@@ -8,7 +8,7 @@ const loadable = (importer) => {
   return withoutForwardRef(
     baseLoadable(importer, {
       fallback: <Loading />,
-    }),
+    })
   );
 };
 

@@ -18,8 +18,7 @@ const Button: FC<Props> = ({ children, link, model, onClick, ...props }) => {
       <button
         type='button'
         onClick={onClick}
-        className={classNames(classes.button, model === 'event' && classes.eventModel)}
-      >
+        className={classNames(classes.button, model === 'event' && classes.eventModel)}>
         {children}
       </button>
     );
