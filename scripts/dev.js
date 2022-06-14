@@ -3,7 +3,7 @@ const nodemon = require('nodemon');
 const rimraf = require('rimraf');
 const express = require('express');
 const webpackDevMiddleware = require('webpack-dev-middleware');
-const webpackHotMiddleware = require('webpack-hot-middleware');
+const webpackHotMiddleware = require('@gatsbyjs/webpack-hot-middleware');
 const webpackConfig = require('../webpack')('development');
 const cors = require('cors');
 
