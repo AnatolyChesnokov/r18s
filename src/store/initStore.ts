@@ -1,6 +1,7 @@
 import { createBrowserHistory, createMemoryHistory } from 'history';
-import { applyMiddleware, createStore } from 'redux';
+import { applyMiddleware, compose, createStore } from 'redux';
 import createSagaMiddleware, { END } from 'redux-saga';
+import thunk from 'redux-thunk';
 
 import { routerMiddleware } from 'connected-react-router';
 import { createLogger } from 'redux-logger';
@@ -22,17 +23,20 @@ export const createHistory = (initialEntries = ['/']) => {
 export default function initStore(preloadedState, history) {
   const sagaMiddleware = createSagaMiddleware();
 
-  const middlewares = [];
+  const middlewares: any[] = [thunk];
   middlewares.push(sagaMiddleware);
 
+  let composeEnhancers = compose();
   if (typeof window !== 'undefined' && process.env.NODE_ENV === 'development') {
+    composeEnhancers = (window['__REDUX_DEVTOOLS_EXTENSION_COMPOSE__'] as typeof compose) || compose;
+
     middlewares.push(createLogger());
   }
 
   const store: any = createStore(
     createRootReducer(history),
     preloadedState,
-    applyMiddleware(...middlewares, routerMiddleware(history))
+    composeEnhancers(applyMiddleware(...middlewares, routerMiddleware(history)))
   );
 
   // Hot reloading
