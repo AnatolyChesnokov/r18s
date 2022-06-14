@@ -1,9 +1,9 @@
 import React, { FC, useEffect, useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
-import eventMessageStyle from '../assets/jss/components/eventMessageStyle';
+import eventMessageStyle from '../../assets/jss/components/eventMessageStyle';
 import Button from './Button';
-import CloseImageUrl from '../assets/images/61155.svg';
+import CloseImageUrl from '../../assets/images/61155.svg';
 
 interface Props {
   message: any;

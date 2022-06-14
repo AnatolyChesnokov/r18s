@@ -1,7 +1,7 @@
 import React, { FC, ReactNode } from 'react';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
-import buttonStyle from '../assets/jss/components/buttonStyle';
+import buttonStyle from '../../assets/jss/components/buttonStyle';
 
 interface Props {
   children: ReactNode;

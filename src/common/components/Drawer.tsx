@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef, useCallback, FC, ReactNode } from 'react';
 import classNames from 'classnames';
 
-import drawerStyle from '../assets/jss/components/drawerStyle';
+import drawerStyle from '../../assets/jss/components/drawerStyle';
 
 interface Props {
   open: boolean;

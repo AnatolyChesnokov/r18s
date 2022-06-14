@@ -1,6 +1,6 @@
 import React, { FC, ReactChild } from 'react';
 
-import cssBaseline from '../assets/jss/components/cssBaselineStyle';
+import cssBaseline from '../../assets/jss/components/cssBaselineStyle';
 
 interface Props {
   children?: ReactChild;

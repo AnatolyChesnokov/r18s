@@ -23,10 +23,6 @@ export default createUseStyles((theme: Theme) => ({
       '& $movieJacket': {
         display: 'flex',
         justifyContent: 'center',
-        '& img': {
-          width: 200,
-          height: 300,
-        },
       },
       '& $movieDetails': {
         '& h2': { ...theme.typography.h4, margin: 0, letterSpacing: -1, lineHeight: '2.5rem' },

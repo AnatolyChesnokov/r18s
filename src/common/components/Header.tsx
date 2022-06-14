@@ -4,9 +4,9 @@ import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useSelector } from 'react-redux';
 import Drawer from './Drawer';
-import headerStyle from '../assets/jss/components/headerStyle';
-import CloseImageUrl from '../assets/images/61155.svg';
-import { ReduxState } from '../store/rootReducer';
+import headerStyle from '../../assets/jss/components/headerStyle';
+import CloseImageUrl from '../../assets/images/61155.svg';
+import { ReduxState } from '../../store/rootReducer';
 
 type Props = {
   children?: React.ReactNode;

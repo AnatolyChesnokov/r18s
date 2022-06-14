@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { RoutesProps } from 'react-router';
 
-import Grid from '../../components/Grid';
+import Grid from '../../common/components/Grid';
 import homeStyle from '../../assets/jss/pages/homeStyle';
 
 type Props = {

@@ -12,7 +12,7 @@
 import React, { ReactNode, FC } from 'react';
 import classNames from 'classnames';
 import { createUseStyles, useTheme } from 'react-jss';
-import { Theme } from '../assets/jss/theme/index';
+import { Theme } from '../../assets/jss/theme';
 
 const SPACINGS: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const GRID_SIZES: (string | number | true)[] = ['auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];

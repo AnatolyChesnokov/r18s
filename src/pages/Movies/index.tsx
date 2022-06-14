@@ -2,9 +2,9 @@ import React, { FC, useRef, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Helmet } from 'react-helmet-async';
 import { RoutesProps } from 'react-router';
-import EventMessage from '../../components/EventMessage';
+import EventMessage from '../../common/components/EventMessage';
 
-import Grid from '../../components/Grid';
+import Grid from '../../common/components/Grid';
 import moviesStyle from '../../assets/jss/pages/moviesStyle';
 
 import { ReduxState } from '../../store/rootReducer';
@@ -42,7 +42,7 @@ const Movies: FC<Props> = ({ children, routeComponent, ...props }) => {
     return <Loading />;
   }
 
-  const title = 'Movies';
+  const title = '';
   const description = 'List of the most recent movies';
 
   return (
@@ -69,7 +69,12 @@ const Movies: FC<Props> = ({ children, routeComponent, ...props }) => {
                   {movies.data.map((e) => (
                     <li key={e.id}>
                       <div className={classes.movieJacket}>
-                        <img src={`https://image.tmdb.org/t/p/original${e.poster_path}`} alt='jacket' />
+                        <img
+                          src={`https://image.tmdb.org/t/p/original${e.poster_path}`}
+                          alt='jacket'
+                          width={200}
+                          height={300}
+                        />
                       </div>
                       <div className={classes.movieDetails}>
                         <h2>{e.title}</h2>

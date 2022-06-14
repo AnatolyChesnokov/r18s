@@ -6,10 +6,10 @@ import { Helmet } from 'react-helmet-async';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFacebook, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faBars, faExclamationTriangle, faSpinner } from '@fortawesome/free-solid-svg-icons';
-import CssBaseline from './components/CssBaseline';
+import CssBaseline from './common/components/CssBaseline';
 import defaultTheme from './assets/jss/theme';
-import Footer from './components/Footer';
-import Header from './components/Header';
+import Footer from './common/components/Footer';
+import Header from './common/components/Header';
 
 import { ReduxState } from './store/rootReducer';
 import appStyle from './assets/jss/pages/appStyle';

@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import footerStyle from '../assets/jss/components/footerStyle';
+import footerStyle from '../../assets/jss/components/footerStyle';
 
 type Props = {
   children?: React.ReactNode;
