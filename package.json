@@ -1,22 +1,22 @@
 {
-  "name": "react-easy-ssr",
+  "name": "react-18-ssr-streaming",
   "version": "1.0.0",
-  "description": "React easy SSR application",
+  "description": "React SSR Streaming App",
   "main": "build/server/index.js",
   "repository": {
     "type": "git"
   },
   "author": {
-    "name": "Thomas Aumaitre",
-    "email": "thomas.aumaitre@gmail.com"
+    "name": "Anatoly Chesnokov",
+    "email": "anatolyches@gmail.com"
   },
   "browserslist": [
     "defaults"
   ],
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "MIT",
   "scripts": {
     "build": "node scripts/build.js",
-    "start": "node server/index.js",
+    "start": "node build/server/index.js",
     "dev": "node scripts/dev.js",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "tsc": "tsc --noEmit",
@@ -30,14 +30,14 @@
     "@fortawesome/react-fontawesome": "^0.1.16",
     "@loadable/component": "^5.15.2",
     "@loadable/server": "^5.15.2",
-    "@svgr/webpack": "^4.3.3",
+    "@svgr/webpack": "^6.2.1",
     "@types/node": "^12.20.36",
     "@types/react-redux": "^7.1.20",
     "autoprefixer": "^9.8.8",
     "classnames": "^2.3.1",
-    "clean-css": "^4.2.4",
+    "clean-css": "^5.3.0",
     "compression": "^1.7.4",
-    "compression-webpack-plugin": "^3.0.0",
+    "compression-webpack-plugin": "^10.0.0",
     "connected-react-router": "^6.9.2",
     "core-js": "^3.19.0",
     "cors": "^2.8.5",
@@ -58,6 +58,7 @@
     "redux": "^4.2.0",
     "redux-logger": "^3.0.6",
     "redux-saga": "^1.1.3",
+    "redux-thunk": "^2.4.1",
     "regenerator-runtime": "^0.13.9",
     "rimraf": "^3.0.2",
     "serialize-javascript": "^2.1.0",
@@ -104,7 +105,7 @@
     "prettier": "^2.6.2",
     "react-refresh": "^0.13.0",
     "style-loader": "^1.0.1",
-    "url-loader": "^2.3.0",
+    "url-loader": "^4.1.1",
     "webpack": "^5.73.0",
     "webpack-bundle-analyzer": "^4.5.0",
     "webpack-cli": "^4.9.2",

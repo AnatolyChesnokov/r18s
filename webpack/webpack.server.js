@@ -7,6 +7,30 @@ const LoadablePlugin = require('@loadable/webpack-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
 
+const devPlugins = [
+  new ReactRefreshPlugin({
+    overlay: {
+      sockIntegration: 'whm',
+    },
+  }),
+  new webpack.HotModuleReplacementPlugin(),
+  new LoadablePlugin(),
+  new MiniCssExtractPlugin(),
+  new webpack.DefinePlugin({
+    'process.env.BROWSER': 'false',
+    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+    'process.env.BACKEND_BASE_URL': JSON.stringify(process.env.BACKEND_BASE_URL),
+  }),
+];
+
+const prodPlugins = [
+  new MiniCssExtractPlugin(),
+  new webpack.DefinePlugin({
+    'process.env.BROWSER': 'false',
+    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+  }),
+];
+
 module.exports = {
   name: 'server',
   mode: isDev ? 'development' : 'production',
@@ -15,7 +39,6 @@ module.exports = {
     ? {
         devServer: {
           hot: true,
-          client: { overlay: false },
         },
       }
     : null),
@@ -38,23 +61,7 @@ module.exports = {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
   module: require('./loaders.server.js'),
-  plugins: [
-    isDev ? new LoadablePlugin() : null,
-    new MiniCssExtractPlugin(),
-    isDev
-      ? new ReactRefreshPlugin({
-          overlay: {
-            sockIntegration: 'whm',
-          },
-        })
-      : null,
-    isDev ? new webpack.HotModuleReplacementPlugin() : null,
-    new webpack.DefinePlugin({
-      'process.env.BROWSER': 'false',
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-      'process.env.BACKEND_BASE_URL': isDev ? JSON.stringify(process.env.BACKEND_BASE_URL) : undefined,
-    }),
-  ],
+  plugins: isDev ? devPlugins : prodPlugins,
   externals: [nodeExternals()],
   stats: isDev ? 'minimal' : 'normal',
 };

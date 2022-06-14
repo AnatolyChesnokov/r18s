@@ -45,10 +45,13 @@ module.exports = {
   mode: isDev ? 'development' : 'production',
   target: 'web',
   devtool: 'source-map',
-  devServer: {
-    hot: true,
-    client: { overlay: false },
-  },
+  ...(isDev
+    ? {
+        devServer: {
+          hot: true,
+        },
+      }
+    : null),
   entry: {
     bundle: [require.resolve('core-js/stable'), require.resolve('regenerator-runtime/runtime'), paths.srcClient],
   },
