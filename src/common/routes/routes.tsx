@@ -14,8 +14,8 @@ const loadable = (importer) => {
 
 const NoMatch = loadable(() => import(/* webpackChunkName: "NoMatch" */ './Exception/404'));
 
-const Home = loadable(() => import(/* webpackChunkName: "Home" */ './Home/index'));
-const Movies = loadable(() => import(/* webpackChunkName: "Movies" */ './Movies/index'));
+const Home = loadable(() => import(/* webpackChunkName: "Home" */ './Home'));
+const Movies = loadable(() => import(/* webpackChunkName: "Movies" */ './Movies'));
 const AboutUs = loadable(() => import(/* webpackChunkName: "AboutUs" */ './AboutUs'));
 
 export interface Route {

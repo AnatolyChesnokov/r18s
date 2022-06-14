@@ -8,9 +8,9 @@ import { JssProvider, jss } from 'react-jss';
 
 import window from 'global/window';
 import vendorPrefixer from 'jss-plugin-vendor-prefixer';
-import initStore, { createHistory } from './store/initStore';
+import initStore, { createHistory } from './common/utils/store/initStore';
 import App from './App';
-import rootSaga from './store/sagas';
+import rootSaga from './common/utils/store/sagas';
 
 const preloadedState = window.__PRELOADED_STATE__;
 

@@ -2,8 +2,8 @@ import React, { FC } from 'react';
 import { RoutesProps } from 'react-router';
 import { Helmet } from 'react-helmet-async';
 
-import exceptionPageStyle from '../../assets/jss/pages/exceptionPageStyle';
-import ExceptionImageUrl from '../../assets/images/500.svg';
+import exceptionPageStyle from '../../../assets/jss/pages/exceptionPageStyle';
+import ExceptionImageUrl from '../../../assets/images/404.svg';
 
 type Props = {
   children?: React.ReactNode;
@@ -15,8 +15,8 @@ const Exception: FC<Props> = ({ children, routeComponent, ...props }) => {
   return (
     <>
       <Helmet>
-        <title>Error 500</title>
-        <meta name='description' content='Internal error server' />
+        <title>Error 404</title>
+        <meta name='description' content='Page not found' />
         <meta name='robots' content='noindex, nofollow' />
       </Helmet>
 
@@ -25,8 +25,8 @@ const Exception: FC<Props> = ({ children, routeComponent, ...props }) => {
           <div className={classes.containerPage}>
             <img src={ExceptionImageUrl} className={classes.exceptionImage} alt='Exception' />
             <div className={classes.containerText}>
-              <p className={classes.title}>Error 500</p>
-              <p className={classes.subtitle}>Internal error server</p>
+              <p className={classes.title}>Error 404</p>
+              <p className={classes.subtitle}>Page not found</p>
             </div>
           </div>
         </div>

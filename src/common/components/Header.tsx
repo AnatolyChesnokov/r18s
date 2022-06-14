@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 import Drawer from './Drawer';
 import headerStyle from '../../assets/jss/components/headerStyle';
 import CloseImageUrl from '../../assets/images/61155.svg';
-import { ReduxState } from '../../store/rootReducer';
+import { ReduxState } from '../utils/store/rootReducer';
 
 type Props = {
   children?: React.ReactNode;

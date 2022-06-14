@@ -2,8 +2,8 @@ import React, { FC } from 'react';
 import { RoutesProps } from 'react-router';
 import { Helmet } from 'react-helmet-async';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import exceptionPageStyle from '../../assets/jss/pages/exceptionPageStyle';
+import exceptionPageStyle from '../../../assets/jss/pages/exceptionPageStyle';
+import ExceptionImageUrl from '../../../assets/images/500.svg';
 
 type Props = {
   children?: React.ReactNode;
@@ -15,21 +15,24 @@ const Exception: FC<Props> = ({ children, routeComponent, ...props }) => {
   return (
     <>
       <Helmet>
-        <title>Loading...</title>
-        <meta name='description' content='Loading page' />
+        <title>Error 500</title>
+        <meta name='description' content='Internal error server' />
         <meta name='robots' content='noindex, nofollow' />
       </Helmet>
 
       <div className={classes.box}>
         <div className={classes.container}>
           <div className={classes.containerPage}>
-            <span className={classes.fontSpinner}>
-              <FontAwesomeIcon icon='spinner' className={classes.spinner} />
-            </span>
+            <img src={ExceptionImageUrl} className={classes.exceptionImage} alt='Exception' />
+            <div className={classes.containerText}>
+              <p className={classes.title}>Error 500</p>
+              <p className={classes.subtitle}>Internal error server</p>
+            </div>
           </div>
         </div>
       </div>
     </>
   );
 };
+
 export default Exception;

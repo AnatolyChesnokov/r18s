@@ -11,7 +11,7 @@ import defaultTheme from './assets/jss/theme';
 import Footer from './common/components/Footer';
 import Header from './common/components/Header';
 
-import { ReduxState } from './store/rootReducer';
+import { ReduxState } from './common/utils/store/rootReducer';
 import appStyle from './assets/jss/pages/appStyle';
 import appleTouchIcon57 from './assets/images/icons/apple-icon-57x57.png';
 import appleTouchIcon60 from './assets/images/icons/apple-icon-60x60.png';
@@ -27,7 +27,7 @@ import icon32 from './assets/images/icons/favicon-32x32.png';
 import icon96 from './assets/images/icons/favicon-96x96.png';
 import icon16 from './assets/images/icons/favicon-16x16.png';
 import msApplication144 from './assets/images/icons/ms-icon-144x144.png';
-import routes from './pages/routes';
+import routes from './common/routes/routes';
 import './assets/fonts/stylesheet.css';
 
 // @ts-ignore

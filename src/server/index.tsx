@@ -16,10 +16,10 @@ import postcss from 'postcss';
 import autoprefixer from 'autoprefixer';
 import { UAParser } from 'ua-parser-js';
 import CleanCSS from 'clean-css';
-import initStore, { createHistory } from '../store/initStore';
+import initStore, { createHistory } from '../common/utils/store/initStore';
 import App from '../App';
 import renderFullPage from './renderFullPage';
-import rootSaga from '../store/sagas';
+import rootSaga from '../common/utils/store/sagas';
 import { paths } from '../../scripts/utils';
 
 const PORT = process.env.PORT || 3000;
@@ -59,8 +59,8 @@ app.use((req: Request, res: Response) => {
   const userAgent = new UAParser(req.headers['user-agent']).getResult();
   const acceptedLanguages = Array.isArray(req.acceptsLanguages()) ? req.acceptsLanguages()[0] : req.acceptsLanguages();
   const hostname = req.header('host');
-  let language = 'fr-FR';
-  const timezone = 'Europe/Paris';
+  let language = 'ru-RU';
+  const timezone = 'Europe/Moscow';
 
   if (acceptedLanguages && acceptedLanguages !== '*') {
     language = acceptedLanguages;
@@ -120,40 +120,37 @@ app.use((req: Request, res: Response) => {
       const { helmet } = helmetContext;
       const scriptTags = extractor.getScriptTags();
 
-      res
-        .status(staticContext.statusCode || 200)
-        .send(renderFullPage(html, css, fontAwesomeCss, styleTags, serialize(store.getState()), helmet, scriptTags));
+      res.socket.on('error', (error) => {
+        console.error('Fatal', error);
+      });
+
+      let didError = false;
+
+      const { pipe, abort } = ReactDOMServer.renderToPipeableStream(jsx(), {
+        onShellReady() {
+          // If streaming
+          console.log('onShellReady start');
+          res.statusCode = didError ? 500 : 200;
+
+          res.send(
+            renderFullPage(html, css, fontAwesomeCss, styleTags, serialize(store.getState()), helmet, scriptTags)
+          );
+
+          pipe(res);
+          console.log('onShellReady stop');
+        },
+
+        onError(x) {
+          didError = true;
+          console.error(x);
+        },
+      });
+      setTimeout(abort, 5000);
     })
     .catch((e) => {
       console.log(e.message);
       res.status(500).send(e.message);
     });
-
-  let didError = false;
-
-  const { pipe, abort } = ReactDOMServer.renderToPipeableStream(jsx(), {
-    // onAllReady() {
-    //   // If NOT streaming
-    //   res.statusCode = didError ? 500 : 200;
-    //   res.setHeader('Content-type', 'text/html');
-    //   res.write('<!DOCTYPE html>');
-    //   pipe(res);
-    // },
-    onShellReady() {
-      // If streaming
-      console.log('onShellReady start');
-      res.statusCode = didError ? 500 : 200;
-      res.write('<!DOCTYPE html>');
-      pipe(res);
-      console.log('onShellReady stop');
-    },
-    onError(x) {
-      didError = true;
-      console.error(x);
-    },
-  });
-
-  setTimeout(abort, 10000);
 
   store.close();
 });

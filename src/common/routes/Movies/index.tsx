@@ -2,13 +2,13 @@ import React, { FC, useRef, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Helmet } from 'react-helmet-async';
 import { RoutesProps } from 'react-router';
-import EventMessage from '../../common/components/EventMessage';
+import EventMessage from '../../components/EventMessage';
 
-import Grid from '../../common/components/Grid';
-import moviesStyle from '../../assets/jss/pages/moviesStyle';
+import Grid from '../../components/Grid';
+import moviesStyle from '../../../assets/jss/pages/moviesStyle';
 
-import { ReduxState } from '../../store/rootReducer';
-import { triggerMovies } from '../../store/actions';
+import { ReduxState } from '../../utils/store/rootReducer';
+import { triggerMovies } from '../../utils/store/actions';
 import Loading from '../Exception/Loading';
 
 type Props = {

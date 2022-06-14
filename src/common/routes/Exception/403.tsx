@@ -2,8 +2,8 @@ import React, { FC } from 'react';
 import { RoutesProps } from 'react-router';
 import { Helmet } from 'react-helmet-async';
 
-import exceptionPageStyle from '../../assets/jss/pages/exceptionPageStyle';
-import ExceptionImageUrl from '../../assets/images/403.svg';
+import exceptionPageStyle from '../../../assets/jss/pages/exceptionPageStyle';
+import ExceptionImageUrl from '../../../assets/images/403.svg';
 
 type Props = {
   children?: React.ReactNode;
