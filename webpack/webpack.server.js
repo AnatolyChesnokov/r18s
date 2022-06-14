@@ -1,19 +1,34 @@
 const nodeExternals = require('webpack-node-externals');
 const webpack = require('webpack');
+const ReactRefreshPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const { paths } = require('../scripts/utils');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const LoadablePlugin = require('@loadable/webpack-plugin');
+
+const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
   name: 'server',
-  mode: 'production',
+  mode: isDev ? 'development' : 'production',
   target: 'node',
+  ...(isDev
+    ? {
+        devServer: {
+          hot: true,
+          client: { overlay: false },
+        },
+      }
+    : null),
+
   entry: {
     server: [require.resolve('core-js/stable'), require.resolve('regenerator-runtime/runtime'), paths.srcServer],
   },
   output: {
     path: paths.serverBuild,
     filename: 'index.js',
-    publicPath: process.env.STATIC_FILES_URL
+    publicPath: isDev
+      ? paths.publicPath
+      : process.env.STATIC_FILES_URL
       ? `${process.env.STATIC_FILES_URL}${paths.publicPath}`
       : `${paths.publicPath}`,
     libraryTarget: 'commonjs2',
@@ -24,14 +39,22 @@ module.exports = {
   },
   module: require('./loaders.server.js'),
   plugins: [
+    isDev ? new LoadablePlugin() : null,
     new MiniCssExtractPlugin(),
+    isDev
+      ? new ReactRefreshPlugin({
+          overlay: {
+            sockIntegration: 'whm',
+          },
+        })
+      : null,
+    isDev ? new webpack.HotModuleReplacementPlugin() : null,
     new webpack.DefinePlugin({
       'process.env.BROWSER': 'false',
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-      'process.env.BACKEND_BASE_URL': JSON.stringify(process.env.BACKEND_BASE_URL),
-      'process.env.STATIC_FILES_URL': JSON.stringify(process.env.STATIC_FILES_URL), // just used in src/server/renderFullPage.ts
+      'process.env.BACKEND_BASE_URL': isDev ? JSON.stringify(process.env.BACKEND_BASE_URL) : undefined,
     }),
   ],
   externals: [nodeExternals()],
-  stats: 'normal',
+  stats: isDev ? 'minimal' : 'normal',
 };
