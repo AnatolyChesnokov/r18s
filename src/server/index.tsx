@@ -162,3 +162,5 @@ app.listen(PORT, (err) => {
       `App SSR running ${process.env.NODE_ENV === 'production' ? `port : ${PORT}` : `http://localhost:${PORT}`} 🌎`
     );
 });
+
+export default app;
